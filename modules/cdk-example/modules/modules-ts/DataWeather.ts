@@ -1,7 +1,7 @@
 
 import { Resource, TerraformOutput } from "cdktf";
 import { Construct } from "constructs";
-import {} from "node-fetch"
+import {Headers} from "node-fetch"
 //import { DataAzurermClientConfig } from "@cdktf/provider-azurerm";
 
 export interface DataWeatherProps {
@@ -26,7 +26,7 @@ export class DataWeather extends Resource {
         this.zip_code = props.zip_code
 
         new TerraformOutput(this, "test_output", {
-            value: this.zip_code + "___from module"
+            value: this.zip_code + "___from module__"
         })
 
     }
