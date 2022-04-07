@@ -26,7 +26,7 @@ export class DataWeather extends Resource {
         this.zip_code = props.zip_code
 
         new TerraformOutput(this, "test_output", {
-            value: this.zip_code
+            value: this.zip_code + "___from module"
         })
 
     }

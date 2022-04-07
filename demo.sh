@@ -9,4 +9,6 @@ cp ./modules/cdk-example/cdktf.out/stacks/cdk-example/cdk.tf.json ./modules/copi
 terraform get -update
 
 #terraform plan -var zip_code="43201"
-terraform apply -auto-approve -var zip_code="432"
+terraform apply -var zip_code="${RANDOM}" -auto-approve
+echo "done."
+

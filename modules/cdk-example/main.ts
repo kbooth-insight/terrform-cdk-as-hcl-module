@@ -7,14 +7,12 @@ class MyStack extends TerraformStack {
   constructor(scope: Construct, name: string) {
     super(scope, name);
 
-
-    // // Instantiate Azure Provider
-    // new AzurermProvider(this, "AzureRm", {
-    //   features: [{}],
-    // });
+    let zipCodeVar = new TerraformVariable(this, "zip_code", {
+      description: "this is a test input"
+    })
 
     let weather = new DataWeather(this, "internal_id_weather", {
-      zip_code: "43201"
+      zip_code: zipCodeVar.value
     })
 
 
@@ -22,9 +20,7 @@ class MyStack extends TerraformStack {
       value: weather.zip_code
     })
 
-    new TerraformVariable(this, "zip_code_var", {
-      description: "this is a test input"
-    })
+
   }
 
 }

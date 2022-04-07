@@ -16,10 +16,10 @@
   },
   "output": {
     "internal_id_weather_test_output_24CCB5BA": {
-      "value": "${var.zip_code}___from module"
+      "value": "43201"
     },
     "test_output": {
-      "value": "${var.zip_code}"
+      "value": "43201"
     }
   },
   "terraform": {
@@ -30,7 +30,7 @@
     }
   },
   "variable": {
-    "zip_code": {
+    "zip_code_var": {
       "description": "this is a test input"
     }
   }
