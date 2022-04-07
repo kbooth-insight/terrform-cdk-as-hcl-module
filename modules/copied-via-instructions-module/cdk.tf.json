@@ -1,0 +1,37 @@
+{
+  "//": {
+    "metadata": {
+      "backend": "local",
+      "stackName": "cdk-example",
+      "version": "0.10.1"
+    },
+    "outputs": {
+      "cdk-example": {
+        "internal_id_weather": {
+          "test_output": "internal_id_weather_test_output_24CCB5BA"
+        },
+        "test_output": "test_output"
+      }
+    }
+  },
+  "output": {
+    "internal_id_weather_test_output_24CCB5BA": {
+      "value": "43201"
+    },
+    "test_output": {
+      "value": "43201"
+    }
+  },
+  "terraform": {
+    "backend": {
+      "local": {
+        "path": "/Users/kbooth/my-stuff/terrform-cdk-as-hcl-module/modules/cdk-example/terraform.cdk-example.tfstate"
+      }
+    }
+  },
+  "variable": {
+    "zip_code_var": {
+      "description": "this is a test input"
+    }
+  }
+}
